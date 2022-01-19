@@ -27,7 +27,7 @@ jobs:
       - name: Parse LANDING.md
         run: |
           cd parser
-          python parser/main.py -s ../project -t ./src -r ${{ github.repository }} -b ${{ github.event.repository.default_branch }}
+          python parser/main.py -s ../project -t ./src -r ${{ github.repository }} -b $default-branch
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
