@@ -3,7 +3,7 @@ name: Landing
 on:
   push:
     paths:
-     - 'README.md'
+     - 'LANDING.md'
     branches: [ $default-branch ]
   workflow_dispatch:
 
