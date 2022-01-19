@@ -2,10 +2,9 @@ name: Create JSON
 
 on:
   workflow_call:
-    inputs:
+    secrets:
       token:
         required: true
-        type: string
 
 
 jobs:
@@ -35,7 +34,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           path: landing
-          token: ${{ inputs.token }}
+          token: ${{ secrets.token }}
           commit-message: updating information about ${{ github.repository }}
           title: Updating information about ${{ github.repository }}
           branch: ${{ github.repository }}
