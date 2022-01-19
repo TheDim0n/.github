@@ -1,0 +1,8 @@
+{
+    "name": "Landing",
+    "description": "Parse LANDING.md file and create PR",
+    "iconName": "Landing",
+    "filePatterns": [
+        "LANDING.md"
+    ]
+}
